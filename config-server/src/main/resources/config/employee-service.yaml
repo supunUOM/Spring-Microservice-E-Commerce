@@ -1,0 +1,13 @@
+server:
+  port: 8083
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#zipkin config
+management:
+  tracing:
+    sampling:
+      probability: 1.0
