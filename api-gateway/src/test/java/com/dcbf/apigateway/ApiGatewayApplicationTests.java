@@ -9,22 +9,9 @@ import reactor.core.publisher.Mono;
 @SpringBootTest
 class ApiGatewayApplicationTests {
 
-	@Autowired
-	private EmployeeClient employeeClient;
-
-	@Autowired
-	private AuthClient authClient;
-
 	@Test
 	void restCallTest() {
-		var res = employeeClient.findByDepartment(1L);
-		System.out.println(res);
-	}
 
-	@Test
-	void helloTest(){
-		var res = authClient.hello();
-		System.out.println(res);
 	}
 
 	@Test
